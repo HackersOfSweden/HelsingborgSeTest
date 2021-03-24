@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/hbglogo.png" type="image/png" />
+    <title>Förskola och utbildning | Helsingborg.se</title>
+  </head>
+  <body>
+    <!-- NOTIFICATION -->
+    <div id="notification">
+      <span class="notification_icon"
+        ><img src="./img/message.svg" alt=""
+      /></span>
+      <span class="notification_message">
+        <strong>Hög smittspridning av covid-19 i Helsingborg</strong>
+        <p>
+          Smittspridningen av coronaviruset är fortsatt hög i Helsingborg. Vi
+          uppmanar dig att ta rekommendationerna på största allvar. Dina val nu
+          kommer göra skillnad sen.
+          <span><a href="#">Läs mer om den aktuella situationen</a></span
+          >.
+        </p>
+      </span>
+    </div>
+    <!-- SITE -->
+    <div class="site_wrapper">
+      <header class="site_header">
+        <div class="site_menu_flex">
+          <div>
+            <img class="site_menu_logo" src="./img/newlogo.png" alt="" />
+          </div>
+          <div>
+            <nav class="site_menu_">
+              <ul class="site_menu_list">
+                <li><a class="site_menu_list_a" href="#">Företagare</a></li>
+                <li>
+                  <a class="site_menu_list_b" href="#"
+                    >E-tjänster och blanketter</a
+                  >
+                </li>
+                <li><a class="site_menu_list_c" href="#">Besökare</a></li>
+              </ul>
+              <div class="site_menu_search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  width="16px"
+                  height="16px"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+                <form action="">
+                  <input
+                    id="search"
+                    type="text"
+                    placeholder="Sök"
+                    autofocus="autofocus"
+                  />
+                  <label for="search">Sök</label>
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div>
+          <div class="site_nav">
+            <nav>
+              <ul class="site_nav_list">
+                <li><a href="#">Arbete</a></li>
+                <li><a href="#">Bo, bygga och miljö</a></li>
+                <li>
+                  <a class="nav_forskola" href="#">Förskola och utbildning</a>
+                </li>
+                <li><a href="#">Kommun och politik</a></li>
+                <li><a href="#">Omsorg och stöd</a></li>
+                <li><a href="#">Trafik och stadsplanering</a></li>
+                <li><a href="#">Uppleva och göra</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="site_nav_search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              width="16px"
+              height="16px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+            <form action="">
+              <input
+                type="text"
+                placeholder="Sök"
+                autofocus="autofocus"
+                class="site_nav_search_input"
+              />
+              <label for="search"></label>
+            </form>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div id="main_container">
+          <div class="breadcrumb">
+            <ul>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                width="16px"
+                height="16px"
+              >
+                <path
+                  d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                />
+              </svg>
+              <li><a href="">Home</a></li>
+              <span> > </span>
+              <li class="currentPage">Förskola och utbildning</li>
+            </ul>
+          </div>
+          <div id="content">
+            <!-----ACCORDIAN NAVBAR----->
+            <div class="content_sidemenu">
+              <button class="accordion accordion-head">
+                Helsingborgs stads skolor - din kommunala skola
+              </button>
+              <div class="panel">
+                <button class="accordion">Välj våra förskolor</button>
+                <button class="accordion">Välj våra grundskolor</button>
+                <button class="accordion">Välj våra gymnasieskolor</button>
+                <button class="accordion">Läsårstider och lov</button>
+                <button class="accordion">
+                  Mat i Helsingborgs stads skolor
+                </button>
+                <div class="panel">
+                  <button class="accordion">SmartMat Hbg</button>
+                  <button class="accordion">Matprat</button>
+                  <button class="accordion">Våra skolors godaste recept</button>
+                </div>
+                <button class="accordion">Elevhälsa</button>
+                <div class="panel">
+                  <button class="accordion">Helsingborgs sjukhusskolor</button>
+                  <button class="accordion">
+                    Skolläkare och skolsköterska
+                  </button>
+                  <button class="accordion">Psykolog</button>
+                  <button class="accordion">Kurator</button>
+                  <button class="accordion">
+                    Specialpedagogiskt resurscentrum SRC
+                  </button>
+                  <button class="accordion">
+                    Stöd till elever med läs- och skrivsvårigheter
+                  </button>
+                  <button class="accordion">Drogfritt</button>
+                  <button class="accordion">Förebygg tobak</button>
+                </div>
+                <button class="accordion">Trygghet och trivsel</button>
+                <button class="accordion">
+                  Individuell utvecklingsplan med skriftliga omdömen
+                </button>
+                <button class="accordion">Jobba hos oss</button>
+              </div>
+              <button class="accordion">Förskola</button>
+              <div class="panel">
+                <button class="accordion">Förskolor i Helsingborg</button>
+                <button class="accordion">
+                  Pedagogisk omsorg/familjedaghem
+                </button>
+                <button class="accordion">
+                  Ansök om/Säg upp förskoleplats
+                </button>
+                <button class="accordion">E-tjänster och blanketter</button>
+                <button class="accordion">Avgifter för plats i förskola</button>
+                <button class="accordion">Placeringsregler</button>
+                <button class="accordion">Allmän förskola</button>
+                <button class="accordion">Familjecentraler</button>
+                <button class="accordion">Råd och stöd</button>
+                <button class="accordion">Specialverksamhet</button>
+              </div>
+
+              <button class="accordion">Grundskola</button>
+              <div class="panel">
+                <button class="accordion">Grundskolor i Helsingborg</button>
+                <button class="accordion">
+                  Skolval – så väljer du grundskola i Helsingborg
+                </button>
+                <button class="accordion">Fritidshem, fritids</button>
+                <button class="accordion">
+                  Nyanlända elever – här anmäler du ditt barn till den svenska
+                  skolan
+                </button>
+                <button class="accordion">Specialverksamhet</button>
+                <button class="accordion">Skolskjuts</button>
+                <button class="accordion">E-tjänster och blanketter</button>
+                <button class="accordion">Studie- och yrkesvägledning</button>
+                <button class="accordion">Beställa äldre betygskopior</button>
+              </div>
+
+              <button class="accordion">Gymnasieskola</button>
+              <div class="panel">
+                <button class="accordion">Gymnasieskolor i Helsingborg</button>
+                <button class="accordion">Ansökan och antagning</button>
+                <button class="accordion">Sent val och byte av skola</button>
+                <button class="accordion">
+                  Ekonomi, resebidrag och boende
+                </button>
+                <button class="accordion">
+                  Om du slutar eller inte går gymnasiet
+                </button>
+                <button class="accordion">
+                  Nyanlända ungdomar - här anmäler du dig till gymnasiet eller
+                  Välkomsten
+                </button>
+                <button class="accordion">E-tjänster och blanketter</button>
+                <button class="accordion">Studie- och yrkesvägledning</button>
+                <button class="accordion">Beställa äldre betygskopior</button>
+                <button class="accordion">
+                  Familjen Helsingborgs gymnasiedagar
+                </button>
+              </div>
+
+              <button class="accordion">Särskola</button>
+              <div class="panel">
+                <button class="accordion">Förskola</button>
+                <button class="accordion">Grundsärskola</button>
+                <button class="accordion">Gymnasiesärskola</button>
+                <button class="accordion">Att börja i särskolan</button>
+              </div>
+
+              <button class="accordion">
+                Jämför förskolor, grundskolor och gymnasieskolor
+              </button>
+
+              <button class="accordion">Mat i förskolor och skolor</button>
+
+              <button class="accordion">Modersmål</button>
+              <div class="panel">
+                <button class="accordion">Förskola</button>
+                <button class="accordion">Grundskolan</button>
+                <button class="accordion">Gymnasieskolan</button>
+                <button class="accordion">
+                  Din rätt till studiehandledning
+                </button>
+              </div>
+              <button class="accordion">Natur, kultur, teknik</button>
+
+              <button class="accordion">Vuxenutbildning</button>
+              <div class="panel">
+                <button class="accordion">Utbildningar</button>
+                <button class="accordion">Ansökan till vuxenutbildning</button>
+                <button class="accordion">Studievägledning och stöd</button>
+                <button class="accordion">
+                  Beställ betyg från vuxenutbildning
+                </button>
+                <button class="accordion">Betygsprövning</button>
+                <button class="accordion">
+                  Har du erfarenhet, men saknar betyg?
+                </button>
+                <button class="accordion">
+                  Frågor och svar om vuxenutbildning
+                </button>
+                <button class="accordion">Student på Campus Helsingborg</button>
+              </div>
+            </div>
+            <div class="content_body">
+              <section class="content_head">
+                <h1 class="heading head">Förskola och utbildning</h1>
+                <p class="head-top">
+                  Här kan du läsa mer om olika skolformer, vilka regler som
+                  gäller och vilka val du kan göra.
+                </p>
+                <p class="head">
+                  I Helsingborg kan du som förälder välja både kommunala skolor
+                  inom <a href="#">Helsingborgs stads skolor</a> och fristående
+                  skolor, som drivs av andra än kommunen.
+                </p>
+              </section>
+              <!-- GALLERY GRID -->
+              <section class="grid-gallery">
+                <div class="grid-item">
+                  <a href="">
+                    <div class="grid-item-pic">
+                      <img src="./img/forskola.jpeg" alt="Förskola" />
+                    </div>
+                    <div class="grid-item-text">
+                      <h3>Förskola</h3>
+                      <p>
+                        Om du är förälder och arbetar eller studerar kan ditt
+                        barn gå i förskola från 1 års ålder tills att barnet
+                        börjar i förskoleklass. Barn till föräldrar som är
+                        arbetssökande eller föräldralediga för ett annat barn,
+                        får ha sina barn 15 timmar i veckan i förskolan.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item">
+                  <a href="">
+                    <div class="grid-item-pic">
+                      <img src="./img/grundskola.jpeg" alt="Grundskola" />
+                    </div>
+                    <div class="grid-item-text">
+                      <h3>Grundskola</h3>
+                      <p>
+                        I Helsingborg kan du som förälder tillsammans med ditt
+                        barn välja den grundskola som du tycker passar ditt barn
+                        bäst. Det kan vara en kommunal eller fristående skola.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item">
+                  <a href="">
+                    <div class="grid-item-pic">
+                      <img src="./img/highschool.jpeg" alt="Gymnasieskola" />
+                    </div>
+                    <div class="grid-item-text">
+                      <h3>Gymnasieskola</h3>
+                      <p>
+                        Du kan välja din gymnasieutbildning både bland kommunala
+                        och fristående gymnasieskolor.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item">
+                  <div class="grid-item-pic">
+                    <img src="./img/komvux.jpeg" alt="Vuxenutbildning" />
+                  </div>
+                  <div class="grid-item-text">
+                    <h3>Vuxenutbildning</h3>
+                    <p>
+                      Välkommen till vuxenutbildning i Helsingborg. Här hittar
+                      du information om hur du ansöker, vad du kan studera och
+                      vilket stöd du kan få.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <!-- INFORMATION GRID -->
+              <section class="c_grids_h">
+                <div class="grid_h h-1">
+                  <h3>
+                    <a href="">
+                      Jämför förskolor, grundskolor och gymnasieskolor
+                    </a>
+                  </h3>
+                  <p>
+                    I vår jämförelsetjänst kan du hitta en skola som har en viss
+                    inriktning eller finns i ett speciellt geografiskt område.
+                    Här kan du också jämföra förskolor, grundskolor och
+                    gymnasieskolor i Helsingborg.
+                  </p>
+                </div>
+                <div class="grid_h red">
+                  <div class="o-red">Nyheter</div>
+                  <div class="o-red-i">
+                    <a href=""
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        width="15px"
+                        height="15px"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        /></svg
+                      ><strong>
+                        Information om hur Helsingborgs stads skolor hanterar
+                        coronapandemin
+                      </strong></a
+                    >
+                  </div>
+                </div>
+                <div class="grid_h red">
+                  <div class="o-red">Synpunkter och klagomål</div>
+                  <div class="o-red-i">
+                    <p>
+                      Om du är missnöjd med något kring utbildningen har du
+                      möjlighet att klaga.
+                    </p>
+                    <a class="synpunkter" href="">
+                      Så här gör du om du vill lämna synpunkter eller
+                      klagomål.</a
+                    >
+                  </div>
+                </div>
+                <div class="grid_h help">
+                  <h3>
+                    <img src="./img/message.svg" alt="" />
+                    <a href=""> Fick du hjälp av informationen på sidan? </a>
+                  </h3>
+                  <p>
+                    Här kan du lämna feedback om informationen på sidan. Du får
+                    inte svar på din feedback. Har du frågor eller vill komma i
+                    kontakt med Helsingborgs stad kan du vända dig till
+                    <a class="kontaktcenter" href="">Kontaktcenter.</a> Tack för
+                    att du hjälper oss att göra webbplatsen bättre.
+                  </p>
+                  <div class="grid-button">
+                    <button><img src="./img/btn-ja.svg" alt="" />Ja</button>
+                    <button><img src="./img/btn-nej.svg" alt="" />Nej</button>
+                  </div>
+                </div>
+              </section>
+              <div class="publish">
+                <p>Publicerad: 20 mars, 2021</p>
+                <p>Uppdaterad: 23 mars, 2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <section class="container-kontakt">
+      <div class="container-kontakt--">
+        <div class="container-kontakt-wrapper">
+          <div class="container-kontakt-col1">
+            <p class="col1-head">Kontakta kommunen — En väg in</p>
+            <br />
+            <p class="col1-text">
+              När du kontaktar oss är det kommunvägledarna på Helsingborg
+              kontaktcenter som tar hand om dina frågor.
+            </p>
+          </div>
+          <div class="container-kontakt-col2">
+            <strong class="col2-head">Öppettider</strong>
+            <p>Måndag-onsdag 08:00-17:00</p>
+            <p>Torsdag 08:00-18:00</p>
+            <p>Fredag 08:00-17:00</p>
+            <p>
+              Avvikande öppettider kan förekomma i samband med röda dagar, samt
+              dag innan röd dag.
+            </p>
+          </div>
+        </div>
+        <section class="container-box">
+          <div class="container-box-item">
+            <div>
+              <img src="./img/icon-chatta.svg" alt="" />
+              <span class="box-col-head">Chatta</span>
+            </div>
+            <div class="box-col-text">
+              Få svar direkt – chatta med en kommunvägledare
+            </div>
+            <br />
+            <div class="box-col-click">
+              <a href="#">STARTA CHATT > </a>
+            </div>
+          </div>
+          <div class="container-box-item">
+            <div>
+              <img src="./img/icon-mail.svg" alt="" />
+              <span class="box-col-head">Mejla</span>
+            </div>
+            <div class="box-col-text">
+              Få svar inom 24 timmar kontaktcenter@helsingborg.se
+            </div>
+            <br />
+            <div class="box-col-click">
+              <a href="#">SKICKA MEJL > </a>
+            </div>
+          </div>
+          <div class="container-box-item">
+            <div>
+              <img src="./img/icon-meet.svg" alt="" />
+              <span class="box-col-head">Besök</span>
+            </div>
+            <div class="box-col-text">
+              På grund av covid-19 har vår lokal på Stortorget 17 stängt för
+              besök
+            </div>
+            <br />
+            <div class="box-col-click">
+              <a href="#">VISA KARTA > </a>
+            </div>
+          </div>
+          <div class="container-box-item">
+            <div>
+              <img src="./img/icon-phone.svg" alt="" />
+              <span class="box-col-head">Ring</span>
+            </div>
+            <div class="box-col-text">
+              Prata med en kommunvägledare på telefon 042-10 50 00
+            </div>
+            <br />
+            <div class="box-col-click">
+              <a href="#">RING > </a>
+            </div>
+          </div>
+        </section>
+        <div class="link-opentime">
+          <a href="">Här hittar du våra avvikande öppettider ></a>
+        </div>
+        <span></span>
+      </div>
+    </section>
+    <footer>
+      <div id="footer">
+        <div><img src="./img/newlogo.png" alt="" /></div>
+        <section class="footer-container">
+          <div class="footer-col1">
+            <h3>Postadress</h3>
+            <p>
+              HELSINGBORGS KOMMUN <br />
+              251 89 Helsingborg
+            </p>
+            <br />
+            <p>Organisationsnummer: 212000-1157</p>
+          </div>
+
+          <div class="footer-col2">
+            <div><a href="">Om webbplatsen.</a></div>
+            <div>
+              <a href=""
+                >Så behandlar Helsingborgs stad dina personuppgifter.</a
+              >
+            </div>
+          </div>
+
+          <div class="footer-col3">
+            <div class="ft"><a href="">Larm</a></div>
+            <div class="ft"><a href="">Press</a></div>
+            <div class="ft"><a href="">Translate</a></div>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
