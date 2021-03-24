@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/*style disturbance*/
+.disturbance{
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 500;
+    padding: 18px 24px;
+    padding: calc(var(--base, 8px)*2) calc(var(--base, 8px)*3);
+    background-color: var(--color-warning,#efbb21);
+    color: var(--color-warning-text,var(--color-black,#000));
+    height: 110.261px;
+    width: 100%;
+}
+.disturbance > span{
+    margin-left: 10px;
+}
+/*style container inside the header*/
+
+.container  {
+    padding: 12px 24px;
+    margin: 0 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    min-width: 258px;
+    min-height: 72px; 
+}
+/*style nav 3 items*/
+.topnav a {
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+    background-color: #f5f5f5;
+    color: #3d3d3d;
+    letter-spacing: 0.1em;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(98,98,98,.18);
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/*style search box*/
+.search-container{
+    display: flex;
+    background-color:var(--color-form-fields,#eee);
+    margin-left: 1rem;
+    height: 36px;
+    border-radius: 1px;
+    box-shadow: 0 6px 8px rgba(98,98,98,.18);
+}
+
+.nav-menu {
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+    font-size: medium;
+    font-weight: 500;
+}
+  
+form.search input[type=text] {
+    padding: 8px;
+    font-size: 16px;
+    float: left;
+    width: 80%;
+    background: var(--color-form-fields,#eee);
+    border: none;
+}
+
+/* Style the submit button */
+  form.search button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background:rgb(228, 223, 223);
+    border: none;    
+    font-size: 17px;
+    cursor: pointer;
+    height: 36px;
+    border-radius: 0px 8px 8px 0px;
+}
+/* navigation menu */
+
+.main-nav_list {
+    margin: 0 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+    font-size: medium;
+    font-weight: 500;
+  }
+.main-nav, .main-nav_list {
+    list-style-type: none;
+    padding: 14px 8px;
+    background-color: #ae0b05;
+}
+.main-nav .main-nav_list a {
+    text-decoration: none;
+    color: white;
+}
+.main-nav_list a:hover, a:active {
+  text-decoration: underline;
+}
+
+/*----------------------------header-------------*/
+.current-page{
+    padding: 12px 24px;
+    margin: 0.5rem 6.5rem;
+    display: flex;
+    font-size: 18px;
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+    
+}
+.current-page a{
+    text-decoration: none;
+    color: black;
+}
+.current-page .hem i{
+    font-size: 15px;
+}
+
+/*----------grid having sidebar and 6 content boxes------------------*/
+.m-container{
+    display: grid;
+    height: 100vh;
+    padding: 12px 24px;
+    margin: 1rem 4rem;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr 1.2fr ;
+    grid-template-rows: 1.2fr 1.2fr 1.2fr ;
+    grid-template-areas: "sidebar main main content0" "sidebar content1 content2 content3" "sidebar content4 content5 content6";
+    grid-gap: 1.5rem;
+}
+main{
+    grid-area: main;
+    max-height: 95ch;
+    
+}
+main h1{
+    color: #ae0b05;
+    font-weight: 1000;
+    font-size: 40px;
+    word-spacing: 3px;
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+}
+main p{
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+    font-size: 22px;
+    line-height: 1.4;
+    word-spacing: 3px;
+}
+
+.content1{
+    grid-area: content1;
+}
+.content2{
+    grid-area: content2;
+}
+.content3{
+    grid-area: content3;
+}
+.content4{
+    grid-area: content4;
+}
+.content5{
+    grid-area: content5;
+}
+.content6{
+    grid-area: content6;
+}
+.content1 .card{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 18px;
+    height: 95%;
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;   
+    box-shadow: 0 6px 8px rgba(98,98,98,.18);
+}
+.content2 .card{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 18px;
+    height: 95%;
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+    box-shadow: 0 6px 8px rgba(98,98,98,.18);    
+}
+.content3 .card{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 18px;
+    height: 95%;
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+    box-shadow: 0 6px 8px rgba(98,98,98,.18);
+}
+.content4 .card{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 18px;
+    height: 95%;
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+    box-shadow: 0 6px 8px rgba(98,98,98,.18);
+}
+.content5 .card{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 18px;
+    height: 95%;
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+    box-shadow: 0 6px 8px rgba(98,98,98,.18);
+}
+.content6 .card{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 18px;
+    height: 95%;
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+    box-shadow: 0 6px 8px rgba(98,98,98,.18);
+}
+
+.content1 .card a {
+    text-decoration: none;
+    color: black;
+}
+.content2 .card a {
+    text-decoration: none;
+    color: black;
+}
+.content3 .card a{
+    text-decoration: none;
+    color: black;
+}   
+.content4 .card a{
+    text-decoration: none;
+    color: black;
+}
+.content5 .card a{
+    text-decoration: none;
+    color: black;
+}
+.content6 .card a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.content1 .card:hover{
+    background-color: rgb(241, 241, 241);
+}
+.content2 .card:hover{
+    background-color: rgb(241, 241, 241);
+}
+.content3 .card:hover{
+    background-color: rgb(241, 241, 241);
+}
+.content4 .card:hover{
+    background-color: rgb(241, 241, 241);
+}
+.content5 .card:hover{
+    background-color: rgb(241, 241, 241);
+}
+.content6 .card:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+
+/*-----------------content ends---------------*/
+
+
+.sidebar{
+    background-color: #f5f5f5;
+    grid-area: sidebar;
+}
+.btn {
+    width: 90%;
+    text-align: left;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgb(226, 225, 225);
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+  }
+ .dropdown {
+    position: absolute;
+    display: inline-block;
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+    
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /*--------------footer-----------*/
