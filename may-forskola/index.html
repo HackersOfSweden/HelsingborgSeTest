@@ -523,6 +523,28 @@
         <span></span>
       </div>
     </section>
+    <!-- CHAT WINDOW -->
+    <div class="chatwindow">
+      <button class="open-button" onclick="openForm()">Chat</button>
+
+      <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <img class="chatbot" src="./img/chatbot.png" alt="" />
+          <h4>Hi, I am Beanie! Helsingborg Chat Bot</h4>
+
+          <textarea
+            placeholder="What can I help you with?"
+            name="msg"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
+    </div>
     <footer>
       <div id="footer">
         <div><img src="./img/newlogo.png" alt="" /></div>
